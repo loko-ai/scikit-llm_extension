@@ -16,7 +16,6 @@ clf_args = [model, labels, multilabel, max_labels]
 clf_input = [Input(id="data", label="data", service="zero_shot", to="prediction")]
 clf_output = [Output(id="prediction", label="prediction")]
 clf_comp_description = "### SK-LLM ZeroShot"
-llm_clf_component = Component(name="SK-LLM ZeroShot",inputs=clf_input, outputs=clf_output, description=clf_comp_description,
+llm_clf = Component(name="SK-LLM ZeroShot",inputs=clf_input, outputs=clf_output, description=clf_comp_description,
                     args=clf_args, icon="RiFocus2Fill")
-
 

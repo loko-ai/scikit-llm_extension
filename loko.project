@@ -3,7 +3,7 @@
   "id": "scikit-llm_extension",
   "description": "",
   "created_on": "24/05/2023, 09:49:08",
-  "last_modify": "29/05/2023, 16:24:44",
+  "last_modify": "17/01/2024, 09:39:41",
   "graphs": {
     "main": {
       "nodes": [
@@ -107,8 +107,8 @@
         {
           "id": "aeb980c1-54d4-48fb-920a-322e4bd09f46",
           "position": {
-            "x": 1038,
-            "y": 201
+            "x": 1192,
+            "y": 229
           },
           "type": "custom",
           "dragHandle": "#nodeHandle",
@@ -221,8 +221,8 @@
           "selectable": true,
           "draggable": true,
           "positionAbsolute": {
-            "x": 1038,
-            "y": 201
+            "x": 1192,
+            "y": 229
           },
           "__class__": "Node"
         },
@@ -307,7 +307,7 @@
               "icon": "RiPlayFill",
               "values": {
                 "comment": "",
-                "alias": "Multi-class",
+                "alias": "Multi-label",
                 "debug": false,
                 "type": "Object",
                 "value": "['The product was of excellent quality, and the packaging was also very good. Highly recommend!', 'The delivery was super fast, but the product did not match the information provided on the website.']\n"
@@ -326,8 +326,8 @@
         {
           "id": "c54d640e-2a24-44b0-8b82-ac46128d6ec3",
           "position": {
-            "x": 1074,
-            "y": 429
+            "x": 1072.560937233368,
+            "y": 461.3789122492181
           },
           "type": "custom",
           "dragHandle": "#nodeHandle",
@@ -441,8 +441,8 @@
           "selectable": true,
           "draggable": true,
           "positionAbsolute": {
-            "x": 1074,
-            "y": 429
+            "x": 1072.560937233368,
+            "y": 461.3789122492181
           },
           "__class__": "Node"
         }

@@ -5,6 +5,7 @@ from fastapi.responses import JSONResponse
 from loguru import logger
 
 from business.zero_shot_clf import multiclass_zero_shot_pred, multilabel_zero_shot_pred
+from config.AppConfig import OPENAI_API_KEY, OPENAI_API_ORG_ID
 from utils.decorator_fastapi import ExtractValueArgsFastapi
 from skllm.config import SKLLMConfig
 
@@ -28,10 +29,8 @@ app = FastAPI()
 @app.post("/zero_shot")
 @ExtractValueArgsFastapi(file=False)
 def zero_shot(value, args):
-    key = "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"
-    name = "lvt_key"
-    SKLLMConfig.set_openai_key(key)
-    SKLLMConfig.set_openai_org(name)
+    SKLLMConfig.set_openai_key(OPENAI_API_KEY)
+    SKLLMConfig.set_openai_org(OPENAI_API_ORG_ID)
     logger.debug(f"args::: {args}")
     multilabel = args.get("multilabel", False)
     model = args.get("model", "gpt-3.5-turbo")

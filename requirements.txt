@@ -2,5 +2,7 @@ fastapi
 loguru
 loko-client
 loko-extensions
+openai == 0.27.4
 scikit-llm
+solara == 1.16.0
 uvicorn
